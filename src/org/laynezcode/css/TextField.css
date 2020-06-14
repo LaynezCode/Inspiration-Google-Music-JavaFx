@@ -1,0 +1,8 @@
+.text-field {
+    -fx-prompt-text-fill: white;
+}
+
+.text-field{
+    -fx-text-fill: white;
+}
+

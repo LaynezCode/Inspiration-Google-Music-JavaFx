@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #121314;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.laynezcode.Controller.ReproductorController">
+   <children>
+      <AnchorPane prefHeight="60.0" prefWidth="1000.0">
+         <children>
+            <Label layoutX="42.0" layoutY="4.0" prefWidth="97.0" text="My Library" textFill="WHITE" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="861.0" AnchorPane.topAnchor="4.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField layoutX="236.0" layoutY="11.0" prefHeight="40.0" prefWidth="529.0" promptText="Search Music" style="-fx-background-color: #222326;" stylesheets="@../css/TextField.css" AnchorPane.leftAnchor="236.0" AnchorPane.rightAnchor="235.0" />
+            <JFXButton fx:id="show" onMouseClicked="#show" prefHeight="35.0" prefWidth="35.0" text=" " textFill="WHITE" AnchorPane.leftAnchor="0.0" />
+            <ImageView disable="true" fitHeight="20.0" fitWidth="20.0" layoutX="8.0" layoutY="8.0" opacity="0.5" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="8.0">
+               <image>
+                  <Image url="@../images/menu.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXTabPane layoutY="62.0" prefHeight="540.0" prefWidth="1000.0" stylesheets="@../css/TabPane.css" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="62.0">
+         <tabs>
+            <Tab text="PLAYLIST">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1000.0" />
+              </content>
+            </Tab>
+            <Tab text="STATIONS">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="ARTISTS">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="ALBUMS">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #121314;" />
+              </content>
+            </Tab>
+            <Tab text="SONGS">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="GENRES">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+      <AnchorPane layoutY="528.0" opacity="0.97" prefHeight="70.0" prefWidth="1000.0" style="-fx-background-color: #222326;" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="3.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/song.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="87.0" layoutY="14.0" text="Shut Up and Dance" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="87.0" layoutY="27.0" opacity="0.5" text="WALK THE MOON - Talking is hard" textFill="WHITE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" layoutX="283.0" layoutY="4.0" prefHeight="70.0" prefWidth="434.0" spacing="10.0" AnchorPane.leftAnchor="283.0" AnchorPane.rightAnchor="283.0">
+               <children>
+                  <JFXButton prefHeight="33.0" prefWidth="41.0" style="-fx-background-color: #222326;" text=" " textFill="WHITE">
+                     <graphic>
+                        <ImageView disable="true" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/skip.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton prefHeight="49.0" prefWidth="50.0" style="-fx-background-color: red; -fx-background-radius: 90;" text=" " textFill="WHITE">
+                     <graphic>
+                        <ImageView disable="true" fitHeight="27.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true" translateX="4.0">
+                           <image>
+                              <Image url="@../images/pause.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton prefHeight="33.0" prefWidth="41.0" style="-fx-background-color: #222326;" text=" " textFill="WHITE">
+                     <graphic>
+                        <ImageView disable="true" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" translateX="5.0">
+                           <image>
+                              <Image url="@../images/next.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <AnchorPane layoutX="258.0" layoutY="4.0" prefHeight="70.0" prefWidth="155.0">
+               <children>
+                  <JFXButton layoutY="19.0" prefHeight="33.0" prefWidth="41.0" style="-fx-background-color: #222326;" text=" " textFill="WHITE" />
+                  <ImageView disable="true" fitHeight="20.0" fitWidth="20.0" layoutX="11.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/more.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutX="41.0" layoutY="19.0" prefHeight="33.0" prefWidth="41.0" style="-fx-background-color: #222326;" text=" " textFill="WHITE" />
+                  <ImageView disable="true" fitHeight="20.0" fitWidth="20.0" layoutX="53.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/like.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutX="82.0" layoutY="19.0" prefHeight="33.0" prefWidth="41.0" style="-fx-background-color: #222326;" text=" " textFill="WHITE" AnchorPane.leftAnchor="82.0" />
+                  <ImageView disable="true" fitHeight="20.0" fitWidth="20.0" layoutX="93.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="93.0">
+                     <image>
+                        <Image url="@../images/dislike.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <JFXButton layoutX="946.0" layoutY="23.0" prefHeight="33.0" prefWidth="41.0" style="-fx-background-color: #222326;" text=" " textFill="WHITE" AnchorPane.rightAnchor="13.0" />
+            <ImageView disable="true" fitHeight="20.0" fitWidth="20.0" layoutX="957.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="23.0">
+               <image>
+                  <Image url="@../images/listen.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="905.0" layoutY="23.0" prefHeight="33.0" prefWidth="41.0" style="-fx-background-color: #222326;" text=" " textFill="WHITE" AnchorPane.rightAnchor="54.0" />
+            <ImageView disable="true" fitHeight="20.0" fitWidth="20.0" layoutX="915.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="65.0">
+               <image>
+                  <Image url="@../images/volume.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="menu" prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #222326;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="155.0" layoutX="44.0" pickOnBounds="true" preserveRatio="true" translateY="2.0">
+               <image>
+                  <Image url="@../images/google_music.png" />
+               </image>
+            </ImageView>
+            <JFXButton alignment="TOP_LEFT" layoutY="35.0" prefHeight="35.0" prefWidth="200.0" text="Listen new" textAlignment="RIGHT" textFill="WHITE" textOverrun="CLIP">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <graphic>
+                  <ImageView disable="true" fitHeight="20.0" fitWidth="20.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/headset.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="TOP_LEFT" layoutY="68.0" prefHeight="35.0" prefWidth="200.0" text="Top charts" textAlignment="RIGHT" textFill="WHITE" textOverrun="CLIP">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <graphic>
+                  <ImageView disable="true" fitHeight="20.0" fitWidth="20.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/star.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BOTTOM_LEFT" layoutY="103.0" prefHeight="35.0" prefWidth="200.0" text="New released" textAlignment="RIGHT" textFill="WHITE" textOverrun="CLIP">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <graphic>
+                  <ImageView disable="true" fitHeight="20.0" fitWidth="20.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/new.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BOTTOM_LEFT" layoutY="138.0" prefHeight="35.0" prefWidth="200.0" text="My library" textAlignment="RIGHT" textFill="WHITE" textOverrun="CLIP">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <graphic>
+                  <ImageView disable="true" fitHeight="20.0" fitWidth="20.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/library.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BOTTOM_LEFT" layoutY="173.0" prefHeight="35.0" prefWidth="200.0" text="Browse stations" textAlignment="RIGHT" textFill="WHITE" textOverrun="CLIP">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <graphic>
+                  <ImageView disable="true" fitHeight="20.0" fitWidth="20.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/more.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="hide" onMouseClicked="#hide" prefHeight="35.0" prefWidth="35.0" text=" " textFill="WHITE">
+               <graphic>
+                  <ImageView disable="true" fitHeight="20.0" fitWidth="20.0" opacity="0.5" pickOnBounds="true" preserveRatio="true" translateX="3.0">
+                     <image>
+                        <Image url="@../images/menu.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
