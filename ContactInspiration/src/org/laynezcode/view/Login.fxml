@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.laynezcode.controller.LoginController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="341.0" fitWidth="600.0" layoutY="163.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cactus.jpg" />
+               </image>
+            </ImageView>
+            <JFXTextField focusColor="#4d4d4d" labelFloat="true" layoutX="163.0" layoutY="192.0" opacity="0.5" prefHeight="25.0" prefWidth="275.0" promptText="Username">
+               <font>
+                  <Font name="Century Gothic Bold" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField focusColor="#4d4d4d" labelFloat="true" layoutX="163.0" layoutY="248.0" opacity="0.5" prefHeight="23.0" prefWidth="275.0" promptText="Password">
+               <font>
+                  <Font name="Century Gothic Bold" size="12.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXCheckBox checkedColor="#4d4d4d" layoutX="163.0" layoutY="291.0" opacity="0.5" text="Remember Me" unCheckedColor="#4d4d4d" />
+            <JFXButton buttonType="RAISED" layoutX="170.0" layoutY="362.0" prefHeight="46.0" prefWidth="260.0" style="-fx-background-color: #4d4d4d; -fx-background-radius: 20;" text="L O G I N " textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="230.0" layoutY="98.0" text="Login">
+               <font>
+                  <Font name="Century Gothic Bold" size="55.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="close" layoutX="-1.0" layoutY="3.0" onAction="#close" prefHeight="40.0" prefWidth="40.0" text=" " translateX="1.0" translateY="-3.0">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" translateX="5.0" translateY="1.0">
+                     <image>
+                        <Image url="@../images/close.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="register" layoutX="571.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#dragged" onMouseEntered="#preShow" onMouseExited="#postHide" onMousePressed="#pressed" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView disable="true" fitHeight="341.0" fitWidth="600.0" layoutY="163.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cactus.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="201.0" layoutY="50.0" text="Register">
+               <font>
+                  <Font name="Century Gothic Bold" size="55.0" />
+               </font>
+            </Label>
+            <JFXTextField focusColor="#4d4d4d" labelFloat="true" layoutX="164.0" layoutY="138.0" opacity="0.5" prefHeight="25.0" prefWidth="118.0" promptText="FIRST NAME">
+               <font>
+                  <Font name="Century Gothic Bold" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField focusColor="#4d4d4d" labelFloat="true" layoutX="306.0" layoutY="138.0" opacity="0.5" prefHeight="25.0" prefWidth="118.0" promptText="LAST NAME">
+               <font>
+                  <Font name="Century Gothic Bold" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField focusColor="#4d4d4d" labelFloat="true" layoutX="164.0" layoutY="189.0" opacity="0.5" prefHeight="25.0" prefWidth="260.0" promptText="E-MAIL">
+               <font>
+                  <Font name="Century Gothic Bold" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextArea focusColor="#4d4d4d" labelFloat="true" layoutX="164.0" layoutY="233.0" opacity="0.5" prefHeight="166.0" prefWidth="260.0" promptText="BIOGRAPHY">
+               <font>
+                  <Font name="Century Gothic Bold" size="12.0" />
+               </font>
+            </JFXTextArea>
+            <JFXButton buttonType="RAISED" layoutX="170.0" layoutY="420.0" prefHeight="46.0" prefWidth="260.0" style="-fx-background-color: #4d4d4d; -fx-background-radius: 20;" text="R E G I S T E R" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="more" fitHeight="58.0" fitWidth="35.0" layoutX="-3.0" layoutY="233.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/more.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
